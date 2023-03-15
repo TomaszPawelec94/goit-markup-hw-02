@@ -1,30 +1,72 @@
 :root {
     --brand-color: #2196f3;
+    --normal-color: #212121;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: #212121;
+    background-color: #fff;
 }
 
-.button:hover {
+.filter-button {
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #f5f3fa;
+    cursor: pointer;
+    line-height: 1.62;
+}
+
+.filter-button:hover {
     background-color: var(--brand-color);
     color: #fff;
 }
-.button:focus {
+.filter-button:focus {
     background-color: var(--brand-color);
     color: #fff;
 }
-a {
-    color: black;
+
+.link {
     text-decoration: none;
+    color: var(--normal-color);
+}
+.link-white {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.link-grey {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 14px;
+}
+.link-contact {
+    text-decoration: none;
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+}
+.link:hover,
+.link-grey:hover,
+.link-white:hover,
+.link-contact:hover {
+    color: var(--brand-color);
+}
+.link:focus,
+.link-white:focus,
+.link-grey:focus,
+.link-contact:focus {
+    color: var(--brand-color);
+}
+.link-style {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
 }
 
-a:hover {
-    color: var(--brand-color) 3;
-}
-a:focus {
-    color: var(--brand-color);
+.grey {
+    color: #757575;
 }
 
 .web-logo {
@@ -32,6 +74,7 @@ a:focus {
     font-size: 26px;
     color: var(--brand-color);
     font-family: raleway;
+    line-height: 1.17;
 }
 
 .studio-logo {
@@ -39,44 +82,69 @@ a:focus {
     font-size: 26px;
     color: #000;
     font-family: raleway;
-}
-
-header > a {
-    font-weight: 500;
-    color: #212121;
+    line-height: 1.17;
 }
 
 .main-header {
     background-color: #2f303a;
 }
 
-.main-header > h1 {
+.title {
     font-weight: 900;
+    font-size: 44px;
     color: #fff;
     text-align: center;
+    line-height: 1.36;
 }
 
-.main-header > button {
-    background-color: var(--brand-color) C3;
+.order-button {
+    background-color: var(--brand-color);
     font-weight: 700;
     color: #fff;
+    cursor: pointer;
 }
 
-h2 {
+.headline {
     font-weight: 700;
-    color: #212121;
+    color: var(--normal-color);
+    font-size: 36px;
+    line-height: 1.71;
+    text-align: center;
 }
-h3 {
+.lorem-ipsum {
     font-weight: 700;
-    color: #212121;
+    color: var(--normal-color);
+    font-size: 14px;
+    line-height: 1.14;
+}
+.name-surname {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--normal-color);
+    line-height: 1.71;
+    text-align: center;
+}
+.our-team {
+    background-color: #f5f3fa;
 }
 
-p {
+.description-lorem-ipsum {
     color: #757575;
+    font-size: 14px;
+    line-height: 1.71;
 }
-footer {
+
+.description-team {
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.71;
+    text-align: center;
+}
+.footer-style {
     background-color: #2f303a;
 }
+
 .studio-white {
     color: #fff;
     font-weight: 700;
@@ -86,17 +154,22 @@ footer {
 .white {
     color: #fff;
 }
-.grey {
-    color: rgba(255, 255, 255, 0.6);
-}
 
-[button] {
-    font-family: Roboto, sans-serif;
-}
-.filters > [button] {
-    background-color: #f5f4fa;
-}
-
-address {
+.address-style {
     font-style: normal;
+    line-height: 1.71;
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--normal-color);
+    line-height: 2;
+}
+
+.product-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    line-height: 1.86;
 }
