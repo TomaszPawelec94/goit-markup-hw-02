@@ -64,10 +64,6 @@ body {
     line-height: 1.17;
 }
 
-.grey {
-    color: #757575;
-}
-
 .web-logo {
     font-weight: 700;
     font-size: 26px;
@@ -149,9 +145,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     font-family: raleway;
-}
-.white {
-    color: #fff;
 }
 
 .address-style {
