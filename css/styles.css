@@ -1,6 +1,12 @@
 :root {
     --brand-color: #2196f3;
     --normal-color: #212121;
+    --background-color: #f5f3fa;
+    --background-white: #fff;
+    --link-white-transparency: rgba(255, 255, 255, 0.6);
+    --grey: #757575;
+    --black: #000;
+    --main-background: #2f303a;
 }
 
 body {
@@ -11,18 +17,16 @@ body {
 .filter-button {
     font-weight: 500;
     font-size: 16px;
-    background-color: #f5f3fa;
+    background-color: var(--background-color);
     cursor: pointer;
     line-height: 1.62;
+    border: none;
+    border-radius: 4px;
 }
 
-.filter-button:hover {
+.filter-button:is(:hover, :focus) {
     background-color: var(--brand-color);
-    color: #fff;
-}
-.filter-button:focus {
-    background-color: var(--brand-color);
-    color: #fff;
+    color: var(--background-white);
 }
 
 .link {
@@ -30,18 +34,18 @@ body {
     color: var(--normal-color);
 }
 .link-white {
-    color: #fff;
+    color: var(--background-white);
     text-decoration: none;
     font-size: 14px;
 }
 .link-grey {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--link-white-transparency);
     text-decoration: none;
     font-size: 14px;
 }
 .link-contact {
     text-decoration: none;
-    color: #757575;
+    color: var(--grey);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
@@ -68,26 +72,26 @@ body {
     font-weight: 700;
     font-size: 26px;
     color: var(--brand-color);
-    font-family: raleway;
+    font-family: 'Raleway' sans-serif;
     line-height: 1.17;
 }
 
 .studio-logo {
     font-weight: 700;
     font-size: 26px;
-    color: #000;
-    font-family: raleway;
+    color: var(--black);
+    font-family: 'Raleway' sans-serif;
     line-height: 1.17;
 }
 
 .main-header {
-    background-color: #2f303a;
+    background-color: var(--main-background);
 }
 
 .title {
     font-weight: 900;
     font-size: 44px;
-    color: #fff;
+    color: var(--background-white);
     text-align: center;
     line-height: 1.36;
 }
@@ -95,8 +99,10 @@ body {
 .order-button {
     background-color: var(--brand-color);
     font-weight: 700;
-    color: #fff;
+    color: var(--background-white);
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 
 .headline {
@@ -120,31 +126,31 @@ body {
     text-align: center;
 }
 .our-team {
-    background-color: #f5f3fa;
+    background-color: var(--background-color);
 }
 
 .description-lorem-ipsum {
-    color: #757575;
+    color: var(--grey);
     font-size: 14px;
     line-height: 1.71;
 }
 
 .description-team {
-    color: #757575;
+    color: var(--grey);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.71;
     text-align: center;
 }
 .footer-style {
-    background-color: #2f303a;
+    background-color: var(--main-background);
 }
 
 .studio-white {
-    color: #fff;
+    color: var(--background-white);
     font-weight: 700;
     font-size: 26px;
-    font-family: raleway;
+    font-family: 'Raleway' sans-serif;
 }
 
 .address-style {
@@ -162,6 +168,6 @@ body {
 .product-description {
     font-weight: 400;
     font-size: 16px;
-    color: #757575;
+    color: var(--grey);
     line-height: 1.86;
 }
